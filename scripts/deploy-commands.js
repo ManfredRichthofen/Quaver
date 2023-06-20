@@ -8,7 +8,7 @@ import { Routes } from 'discord-api-types/v10';
 import { Collection } from 'discord.js';
 import { readdirSync } from 'fs';
 import { setLocales } from '../dist/lib/util/common.js';
-import settings from '../settings.json' assert { type: 'json' };
+import settings from '../config/settings.json' assert { type: 'json' };
 
 const locales = new Collection();
 const localeFolders = readdirSync(getAbsoluteFileURL(import.meta.url, ['..', 'locales']));
